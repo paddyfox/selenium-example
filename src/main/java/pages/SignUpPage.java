@@ -7,9 +7,6 @@ import org.openqa.selenium.support.FindBy;
 public class SignUpPage extends PageObject {
 
     @FindBy(id="firstname") private WebElement firstNameTextField;
-    @FindBy(id="lastname") private WebElement lastNameTextField;
-    @FindBy(id="address") private WebElement addressTextField;
-    @FindBy(id="zipcode") private WebElement zipCodeTextField;
     @FindBy(id="signup") private WebElement submitButton;
 
     public SignUpPage(WebDriver driver) {
@@ -23,17 +20,6 @@ public class SignUpPage extends PageObject {
     public void enterName(String firstName, String lastName) {
         this.firstNameTextField.clear();
         this.firstNameTextField.sendKeys(firstName);
-
-        this.lastNameTextField.clear();
-        this.lastNameTextField.sendKeys(lastName);
-    }
-
-    public void enterAddress(String address, String zipCode) {
-        this.addressTextField.clear();
-        this.addressTextField.sendKeys(address);
-
-        this.zipCodeTextField.clear();
-        this.zipCodeTextField.sendKeys(zipCode);
     }
 
     public ReceiptPage submit() {

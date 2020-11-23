@@ -33,7 +33,4 @@ public class FunctionalTest {
     public static void tearDown() {
         driver.close();
     }
-
-    public void ScreenShotRule(WebDriver webDriver) {
-    }
 }

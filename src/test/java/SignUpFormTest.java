@@ -17,10 +17,8 @@ public class SignUpFormTest extends FunctionalTest {
         assertTrue(signUpPage.isInitialised());
 
         signUpPage.enterName("Paddy", "Fox");
-        signUpPage.enterAddress("123 Street", "12345");
 
         ReceiptPage receiptPage = signUpPage.submit();
-        assertTrue(receiptPage.isInitialised());
 
         assertEquals("Thank you", receiptPage.confirmationHeader());
     }

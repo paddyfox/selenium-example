@@ -12,10 +12,6 @@ public class ReceiptPage extends PageObject {
         super(driver);
     }
 
-    public Boolean isInitialised() {
-        return header.isDisplayed();
-    }
-
     public String confirmationHeader(){
         return header.getText();
     }
