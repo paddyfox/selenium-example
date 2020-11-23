@@ -1,0 +1,4 @@
+pages/SignUpPage.class
+pages/PageObject.class
+framework/FunctionalTest.class
+pages/ReceiptPage.class
